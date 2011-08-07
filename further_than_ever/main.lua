@@ -43,7 +43,11 @@ function love.load()
 	love.graphics.setMode(
 		(tiles.width + tiles.border.left + tiles.border.right) * tiles.tile_size,
 		(tiles.height + tiles.border.top + tiles.border.bottom) * tiles.tile_size)
-	
+
+		for i,v in ipairs(love) do
+			print(i .. ": " .. v)
+		end
+
 	love.graphics.setBackgroundColor(255,255,255)
 
 	nice_font = love.graphics.newFont("oblik_serif_bold.otf" , 24)
@@ -59,7 +63,10 @@ function love.load()
 	tiles.init()
 
 	sounds.add_loop_change_cb(new_bird)
-	new_bird()
+--    new_bird()
+	if love.mouse.isVisible() then
+		love.mouse.setVisible(false)
+	end
 end
 
 function love.draw()

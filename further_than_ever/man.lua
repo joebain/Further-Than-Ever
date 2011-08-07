@@ -30,7 +30,7 @@ man.net.left = 0
 man.net.right = 0
 
 function man.init()
-    man.position.y = love.graphics.getHeight() - tiles.tile_size
+    man.position.y = love.graphics.getHeight() - tiles.tile_size * tiles.border.bottom
 
 	man.init_net()
 

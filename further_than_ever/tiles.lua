@@ -7,7 +7,7 @@ tiles.tile_size = 20
 tiles.border = {}
 tiles.border.left = 0
 tiles.border.top = 0
-tiles.border.bottom = 1.5
+tiles.border.bottom = 2.5
 tiles.border.right = 0
 
 tiles.brightness_down_speed = 0.4
